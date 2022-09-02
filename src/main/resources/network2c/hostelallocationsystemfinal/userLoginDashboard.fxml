@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="470.0" prefWidth="874.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="network2c.hostelallocationsystemfinal.UserLoginDashboard">
+   <children>
+      <Label layoutX="360.0" layoutY="59.0" prefHeight="72.0" prefWidth="329.0" text=" KTU HOSTEL SEARCH">
+         <font>
+            <Font name="Constantia" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="pnlStatus1" layoutX="214.0" prefHeight="63.0" prefWidth="660.0" style="-fx-background-color: #ff750c;">
+         <children>
+            <Label fx:id="btnClose" layoutX="631.0" layoutY="4.0" onMouseClicked="#handleClose" text="X" textFill="#f8f5f5">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label fx:id="label_welcome" layoutX="31.0" layoutY="1.0" prefHeight="72.0" prefWidth="590.0" text="WELCOME!" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.2442747950553894" />
+                     </color></DropShadow>
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.6755725145339966" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <VBox layoutX="225.0" layoutY="164.0" prefHeight="289.0" prefWidth="637.0">
+         <children>
+            <StackPane>
+               <children>
+                  <GridPane fx:id="panelDashboard" prefHeight="330.0" prefWidth="637.0" style="-fx-background-color: #fff;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="9.0" />
+                      <RowConstraints maxHeight="139.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="139.0" minHeight="0.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="139.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="269.0" minHeight="10.0" prefHeight="233.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="151.0" prefWidth="637.0" GridPane.rowIndex="2" />
+                        <GridPane GridPane.rowIndex="4">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="118.0" prefWidth="315.0">
+                                 <children>
+                                    <AnchorPane layoutX="60.0" layoutY="-9.0" prefHeight="123.0" prefWidth="215.0" style="-fx-background-color: white;">
+                                       <effect>
+                                          <DropShadow>
+                                             <color>
+                                                <Color opacity="0.21374045312404633" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                    </AnchorPane>
+                                    <ImageView fitHeight="84.0" fitWidth="92.0" layoutX="121.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/hostel-icon.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Hyperlink fx:id="dash_applyLink" layoutX="133.0" layoutY="83.0" onAction="#onClickBeforeApplyPage" text="Apply" textFill="#1005e4">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Hyperlink>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="124.0" prefWidth="284.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <AnchorPane layoutX="60.0" layoutY="6.0" prefHeight="107.0" prefWidth="215.0" style="-fx-background-color: white;">
+                                       <effect>
+                                          <DropShadow>
+                                             <color>
+                                                <Color opacity="0.22519083321094513" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                    </AnchorPane>
+                                    <ImageView fitHeight="73.0" fitWidth="121.0" layoutX="123.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/d3792687d90fe1d03389468ee638f387.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Hyperlink fx:id="dash_hosteldetailLink" layoutX="130.0" layoutY="85.0" onAction="#onClickToHostelName" text="Hostels" textFill="#1103da">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Hyperlink>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <AnchorPane layoutY="-8.0" prefHeight="123.0" prefWidth="267.0" style="-fx-background-color: white;">
+                                       <effect>
+                                          <DropShadow>
+                                             <color>
+                                                <Color opacity="0.24045801162719727" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                    </AnchorPane>
+                                    <ImageView fitHeight="84.0" fitWidth="103.0" layoutX="100.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/hospitality-icon-10.jpg" />
+                                       </image>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </ImageView>
+                                    <Hyperlink fx:id="dash_availableLink" layoutX="69.0" layoutY="82.0" text="Available Rooms" textFill="#1103da">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Hyperlink>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <AnchorPane layoutY="6.0" prefHeight="107.0" prefWidth="267.0" style="-fx-background-color: white;">
+                                       <effect>
+                                          <DropShadow>
+                                             <color>
+                                                <Color opacity="0.16412213444709778" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                    </AnchorPane>
+                                    <ImageView fitHeight="84.0" fitWidth="84.0" layoutX="95.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Images/R.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Hyperlink fx:id="dash_appLink" layoutX="59.0" layoutY="86.0" text="Application Status" textFill="#1103da">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Hyperlink>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="panelChat" prefHeight="330.0" prefWidth="637.0" style="-fx-background-color: #fff;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="9.0" />
+                        <RowConstraints maxHeight="139.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="139.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="139.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="139.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="269.0" minHeight="10.0" prefHeight="233.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5">
+                           <children>
+                              <GridPane layoutX="1.0" layoutY="-2.0" prefHeight="220.0" prefWidth="637.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <AnchorPane prefHeight="220.0" prefWidth="483.0">
+                                       <children>
+                                          <ListView layoutX="1.0" layoutY="-10.0" prefHeight="233.0" prefWidth="637.0" />
+                                          <Text layoutX="4.0" layoutY="-21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messages" wrappingWidth="75.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#7c7272" layoutX="47.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All your messages recieved will appear hear">
+                                             <font>
+                                                <Font size="11.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="panelSettings" prefHeight="217.0" prefWidth="637.0" style="-fx-background-color: #fff;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="56.0" minHeight="0.0" prefHeight="56.0" />
+                        <RowConstraints maxHeight="139.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="139.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="139.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="269.0" minHeight="10.0" prefHeight="233.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <AnchorPane prefHeight="143.0" prefWidth="478.0" GridPane.rowIndex="1" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+                           <children>
+                              <Text layoutX="21.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Password" wrappingWidth="253.72265625">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="22.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Current Password" wrappingWidth="174.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="23.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter new Password" wrappingWidth="143.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fontSmoothingType="LCD" layoutX="22.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm New Password" wrappingWidth="161.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <PasswordField layoutX="23.0" layoutY="65.0" prefHeight="25.0" prefWidth="361.0" promptText="current password" />
+                              <PasswordField layoutX="22.0" layoutY="122.0" prefHeight="25.0" prefWidth="361.0" promptText="current password" />
+                              <PasswordField layoutX="22.0" layoutY="180.0" prefHeight="25.0" prefWidth="361.0" promptText="current password" />
+                              <Button layoutX="419.0" layoutY="162.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="174.0" style="-fx-background-color: #0b91e4;" text="Save" textFill="#ffe100">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Button>
+                              <Button layoutX="417.0" layoutY="101.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="174.0" style="-fx-background-color: #0b91e4;" text="Cancel" textFill="#ffe100">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="panelMessages" alignment="CENTER" prefHeight="330.0" prefWidth="637.0" style="-fx-background-color: #fff;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="9.0" />
+                        <RowConstraints maxHeight="139.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="139.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="139.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="269.0" minHeight="10.0" prefHeight="233.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <AnchorPane prefHeight="260.0" prefWidth="637.0" GridPane.rowIndex="4">
+                           <children>
+                              <AnchorPane layoutY="-9.0" prefHeight="242.0" prefWidth="638.0" style="-fx-background-color: #ff750c;">
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color opacity="0.02671755664050579" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </AnchorPane>
+                              <Label fx:id="label_welcome111" layoutX="31.0" layoutY="31.0" prefHeight="45.0" prefWidth="408.0" text="* Secure any room of you choice" textFill="#0a0707">
+                                 <font>
+                                    <Font name="Calibri Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="label_welcome1111" layoutX="26.0" layoutY="91.0" prefHeight="45.0" prefWidth="608.0" text=" * Available on KTU campus click dashboard to see them" textFill="#0a0707">
+                                 <font>
+                                    <Font name="Calibri Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="label_welcome11" layoutX="32.0" layoutY="5.0" prefHeight="45.0" prefWidth="399.0" text="* Chat directly with the hostel owners" textFill="#0a0707">
+                                 <font>
+                                    <Font name="Calibri Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="label_welcome1112" layoutX="31.0" layoutY="60.0" prefHeight="45.0" prefWidth="447.0" text="* See available hostel and their location" textFill="#0a0707">
+                                 <font>
+                                    <Font name="Calibri Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="expressQuote2" layoutX="176.0" layoutY="189.0" prefHeight="45.0" prefWidth="385.0" text="Thank you! Enjoy your stay." textFill="#ffee00">
+                                 <font>
+                                    <Font name="Ebrima" size="24.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color opacity="0.2748091518878937" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Label>
+                              <Label fx:id="label_welcome11111" layoutX="31.0" layoutY="122.0" prefHeight="45.0" prefWidth="608.0" text="* Please do well to comply by the rules that govern is platform" textFill="#0a0707">
+                                 <font>
+                                    <Font name="Calibri Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="label_welcome111111" layoutX="31.0" layoutY="150.0" prefHeight="45.0" prefWidth="608.0" text="* Feel free to share any feedback" textFill="#0a0707">
+                                 <font>
+                                    <Font name="Calibri Light" size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="label_welcome1" prefHeight="48.0" prefWidth="625.0" text="  APPLY FOR ANY HOSTEL OF YOUR CHOICE" textFill="RED" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Ebrima" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+      <Pane fx:id="pnlStatus" layoutX="214.0" layoutY="114.0" prefHeight="63.0" prefWidth="660.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="labelStatus" layoutX="18.0" layoutY="19.0" prefHeight="35.0" prefWidth="143.0" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Light" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelStatusMini" layoutX="23.0" layoutY="1.0" prefHeight="35.0" prefWidth="143.0" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Light" size="13.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <VBox prefHeight="553.0" prefWidth="215.0" style="-fx-background-color: #bc4e00;">
+         <children>
+            <Pane prefHeight="123.0" prefWidth="215.0">
+               <children>
+                  <ImageView fitHeight="72.0" fitWidth="182.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/ktu_logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="btnMessages" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="52.0" prefWidth="214.0" style="-fx-background-color: #bc4e00;" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnDashboard" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="47.0" prefWidth="214.0" style="-fx-background-color: #bc4e00;" text="Dashboard" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/178-1789203_user-icon-png-white-printer-logic-client-download.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnChat" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="43.0" prefWidth="216.0" style="-fx-background-color: #bc4e00;" text="Messages" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/mess.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnSettings" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="49.0" prefWidth="214.0" style="-fx-background-color: #bc4e00;" text="Settings" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/set.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <AnchorPane prefHeight="197.0" prefWidth="215.0">
+               <children>
+                  <Button fx:id="button_logout" alignment="BASELINE_LEFT" contentDisplay="TOP" graphicTextGap="15.0" layoutX="1.0" layoutY="159.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="214.0" style="-fx-background-color: #bc4e00;" text="Logout" textFill="WHITE">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.2633587718009949" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="40.0" fitWidth="28.0" layoutX="15.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/Icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.5458015203475952" />
+               </color>
+            </DropShadow>
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>

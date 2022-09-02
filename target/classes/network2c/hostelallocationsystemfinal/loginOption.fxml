@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #bc4e00;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="network2c.hostelallocationsystemfinal.LoginOption">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="312.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="53.0" fitWidth="173.0" layoutX="28.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/ktu_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.11999999731779099" green="0.003599999938160181" blue="0.003599999938160181" opacity="0.290076345205307" />
+               </color></DropShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="143.0" layoutY="85.0" prefHeight="253.0" prefWidth="305.0" style="-fx-background-color: #bc4e00;" />
+      <AnchorPane layoutX="154.0" layoutY="92.0" prefHeight="236.0" prefWidth="322.0" style="-fx-background-color: #fffff0;">
+         <children>
+            <Button layoutX="62.0" layoutY="86.0" mnemonicParsing="false" onAction="#switchToLoginPage" prefHeight="37.0" prefWidth="179.0" style="-fx-background-color: #ff750c;" text="USER" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.19847328960895538" />
+                     </color></DropShadow>
+               </effect>
+            </Button>
+            <Button layoutX="62.0" layoutY="164.0" mnemonicParsing="false" onAction="#switchToAdminLoginPage" prefHeight="37.0" prefWidth="179.0" style="-fx-background-color: #ff750c;" text="ADMIN" textFill="#ebebeb">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.0" />
+                     </color></DropShadow>
+               </effect>
+            </Button>
+            <Button layoutX="83.0" layoutY="211.0" mnemonicParsing="false" onAction="#onClickBackToAccessPage" prefHeight="25.0" prefWidth="151.0" style="-fx-background-color: transparent;" text="Go back" underline="true">
+               <font>
+                  <Font name="Ebrima" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.3320610821247101" />
+               </color></DropShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="406.0" layoutY="115.0" prefHeight="53.0" prefWidth="52.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="159.0" layoutY="110.0" prefHeight="53.0" prefWidth="305.0" text="Choose login option" textFill="#0969c9">
+         <font>
+            <Font name="Calibri Light" size="36.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="LoadingScreen" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="network2c.hostelallocationsystemfinal.ProgressPage">
+   <children>
+      <Text fx:id="loadingText" fill="#00ab2e" layoutX="199.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click to complete" wrappingWidth="266.74609375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnClose" layoutX="339.0" layoutY="317.0" minHeight="11.0" mnemonicParsing="false" onAction="#cancel" onMouseClicked="#cancel" prefHeight="27.0" prefWidth="167.0" style="-fx-background-color: #ff750c;" text="Send" />
+      <ProgressIndicator fx:id="progressIndicator" layoutX="286.0" layoutY="241.0" prefHeight="100.0" prefWidth="200.0" progress="0.0" />
+      <ImageView fitHeight="97.0" fitWidth="230.0" layoutX="171.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/ktu_logo.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="loadingText1" layoutX="93.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Click the send Button to confirm " wrappingWidth="439.74609375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnClose1" layoutX="84.0" layoutY="317.0" minHeight="11.0" mnemonicParsing="false" onAction="#onClickBackDashboard" onMouseClicked="#cancel" prefHeight="27.0" prefWidth="167.0" style="-fx-background-color: #ff750c;" text="Back To Dashboard" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="network2c.hostelallocationsystemfinal.ApplyPage">
+   <children>
+      <VBox layoutX="6.0" layoutY="8.0" prefHeight="57.0" prefWidth="590.0" style="-fx-background-color: #ff750c;">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/ktu_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" />
+      <Button fx:id="btnApplyNow" layoutX="361.0" layoutY="351.0" mnemonicParsing="false" onAction="#ClickToSendApplication" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #ff750c;" text="Apply Now" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ComboBox fx:id="roomType" layoutX="128.0" layoutY="218.0" prefHeight="25.0" prefWidth="406.0" promptText="Choose room type" />
+      <Text layoutX="57.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload Form" />
+      <ComboBox fx:id="hostelName" layoutX="127.0" layoutY="115.0" prefHeight="25.0" prefWidth="406.0" promptText="Select a hostel" style="-fx-border-color: greebluen;" />
+      <Text layoutX="128.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 in a room / 1 in a room" />
+      <Text fill="RED" layoutX="258.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" *" />
+      <Text layoutX="56.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room type" />
+      <Text layoutX="54.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hostel Name" />
+      <ComboBox fx:id="genderType" layoutX="126.0" layoutY="159.0" prefHeight="25.0" prefWidth="406.0" promptText="gender type" />
+      <Text layoutX="54.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" />
+      <Text layoutX="57.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload Passport" wrappingWidth="69.09375" />
+      <ImageView fitHeight="25.0" fitWidth="200.0" layoutX="133.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="file_uploadButton" layoutX="132.0" layoutY="265.0" mnemonicParsing="false" onAction="#fileUpload" prefHeight="25.0" prefWidth="228.0" text="Upload document here" />
+      <Label fx:id="label_fileChooser" layoutX="364.0" layoutY="269.0" prefHeight="17.0" prefWidth="177.0" />
+      <Button fx:id="file_uploadButton1" layoutX="133.0" layoutY="304.0" mnemonicParsing="false" onAction="#fileUpload1" prefHeight="25.0" prefWidth="228.0" text="Upload passport picture " />
+      <Label fx:id="label_fileChooser1" layoutX="372.0" layoutY="309.0" prefHeight="17.0" prefWidth="177.0" />
+      <Button fx:id="btnApplyNow1" layoutX="126.0" layoutY="351.0" mnemonicParsing="false" onAction="#onClickBackBeforeApply" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #ff750c;" text="Back" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
